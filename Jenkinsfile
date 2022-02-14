@@ -15,8 +15,6 @@ pipeline{
                 sh "node -v"
                 sh "npm -v"
                 echo "Stop all existing process"
-                sh "export PATH=$PATH:${env.WORKSPACE}/node_modules/pm2/bin"
-                sh "npm stop"
             }
         }
         stage('Build') {
@@ -24,6 +22,7 @@ pipeline{
                 echo 'Building..'
                 sh 'npm install --save'
                 sh 'export NODE_ENV=production'
+                sh 'export NODE_PORT=8080'
             }
         }
         stage('Test') {
