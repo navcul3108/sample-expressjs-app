@@ -16,7 +16,7 @@ pipeline{
                 sh "npm -v"
                 echo "Stop all existing process"
                 sh "export PATH=$PATH:${env.WORKSPACE}/node_modules/pm2/bin"
-                sh "pm2 stop all"
+                sh "npm stop"
             }
         }
         stage('Build') {
