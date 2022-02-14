@@ -1,5 +1,30 @@
-extends layout
+extends _layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .cover-container.d-flex.h-100.p-3.mx-auto.flex-column
+    header.masthead.mb-auto
+      .inner
+        h3.masthead-brand Cover
+        nav.nav.nav-masthead.justify-content-center
+          a.nav-link.active(href='https://getbootstrap.com/docs/4.0/examples/cover/#') Home
+          a.nav-link(href='https://getbootstrap.com/docs/4.0/examples/cover/#') Features
+          a.nav-link(href='https://getbootstrap.com/docs/4.0/examples/cover/#') Contact
+    main.inner.cover(role='main')
+      h1.cover-heading Cover your page.
+      p.lead
+        | Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+      p.lead
+        a.btn.btn-lg.btn-secondary(href='https://getbootstrap.com/docs/4.0/examples/cover/#') Learn more
+    footer.mastfoot.mt-auto
+      .inner
+        p
+          | Cover template for 
+          a(href='https://getbootstrap.com/') Bootstrap
+          | , by 
+          a(href='https://twitter.com/mdo') @mdo
+          | .
+  script(src='/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+  script.
+    window.jQuery || document.write('<script src="/jquery-slim.min.js"><\\/script>')
+  script(src='/popper.min.js')
+  script(src='/bootstrap.min.js')
