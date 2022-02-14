@@ -11,8 +11,12 @@ pipeline{
         stage("Prepare"){
             steps{
                 echo "Setting up..."
+                echo "Checking node and npm"
                 sh "node -v"
                 sh "npm -v"
+                echo "Stop all existing process"
+                sh "npm install -g pm2"
+                sh "pm2 stop all"
             }
         }
         stage('Build') {
