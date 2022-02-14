@@ -6,15 +6,15 @@ block content
       .inner
         h3.masthead-brand Cover
         nav.nav.nav-masthead.justify-content-center
-          a.nav-link.active(href='https://getbootstrap.com/docs/4.0/examples/cover/#') Home
-          a.nav-link(href='https://getbootstrap.com/docs/4.0/examples/cover/#') Features
-          a.nav-link(href='https://getbootstrap.com/docs/4.0/examples/cover/#') Contact
-    main.inner.cover(role='main')
+          a.nav-link.active(href='#') Home
+          a.nav-link(href='#') Features
+          a.nav-link(href='#') Contact
+    main.inner.cover.bg-image(role='main' style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');height: 100vh")
       h1.cover-heading Cover your page.
       p.lead
         | Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
       p.lead
-        a.btn.btn-lg.btn-secondary(href='https://getbootstrap.com/docs/4.0/examples/cover/#') Learn more
+        a.btn.btn-lg.btn-secondary(href='#') Learn more
     footer.mastfoot.mt-auto
       .inner
         p
@@ -23,8 +23,6 @@ block content
           | , by 
           a(href='https://twitter.com/mdo') @mdo
           | .
-  script(src='/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
-  script.
-    window.jQuery || document.write('<script src="/jquery-slim.min.js"><\\/script>')
+  script(src='/jquery-3.2.1.slim.min.js')
   script(src='/popper.min.js')
   script(src='/bootstrap.min.js')
